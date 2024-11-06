@@ -13,7 +13,7 @@ VARIABLES
   --green01: #018c0f;
   --green02: #d7ffe0;
   --white: #fff;
-  --primaryGradient: linear-gradient(#13b0f5 3%, #e70faa 100%);
+  --primaryGradient: linear-gradient(90deg, #13b0f5 3%, #e70faa 100%);
   --fontWeightLight: 300;
   --fontWeightRegular: 400;
   --fontWeightMedium: 500;
