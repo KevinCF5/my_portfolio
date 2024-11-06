@@ -49,17 +49,21 @@ p {
   font-size: 1.8rem;
 }
 
+section {
+  margin: 200px 0;
+}
+
 .primaryHeader {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
 .primaryHeader .columnLeft {
   width: 20%;
   display: flex;
-  align-items: center;
   justify-content: flex-start;
+  align-items: center;
   gap: 20px;
 }
 
@@ -67,7 +71,6 @@ p {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  color: var(--colorIcon);
 }
 
 .primaryHeader .columnLeft button svg {
@@ -99,12 +102,9 @@ p {
 }
 
 .container {
-  width: 100%;
-  max-width: 1024px;
+  /* width: 100%; */
+  width: 1024px;
   margin: 0 auto;
-}
-
-.devName {
 }
 
 /* BANNER SECTION */
@@ -113,7 +113,6 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 100px;
 }
 
 .sectionBanner .columnLeft h1 {
@@ -127,8 +126,8 @@ p {
 }
 
 .sectionBanner .columnRight {
-  border-radius: 100%;
   position: relative;
+  border-radius: 100%;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -137,9 +136,9 @@ p {
   height: 349px;
 }
 .sectionBanner .columnRight img {
-  border-radius: 100%;
   width: calc(100% - 20px);
   height: calc(100% - 20px);
+  border-radius: 100%;
 }
 
 .sectionBanner .columnRight::before {
@@ -152,4 +151,41 @@ p {
   position: absolute;
   z-index: -1;
   transform: rotate(-90deg);
+}
+
+/* TECH STACK SECTION */
+
+.sectionTechStack header {
+  text-align: center;
+}
+
+.sectionTechStack header h2 {
+  margin-bottom: 10px;
+}
+
+.sectionTechStack header h3 {
+  margin-top: 0;
+}
+
+.sectionTechStack .stackImagesContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  column-gap: 40px;
+  row-gap: 70px;
+  margin-top: 100px;
+}
+
+.imageLight,
+.imageDark {
+  display: none;
+}
+
+html[data-theme="light"] .imageLight {
+  display: inline-block !important;
+}
+
+html[data-theme="dark"] .imageDark {
+  display: inline-block !important;
 }
