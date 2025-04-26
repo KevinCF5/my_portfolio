@@ -49,6 +49,18 @@ p {
   font-size: 1.8rem;
 }
 
+small {
+  color: var(--colorP);
+  font-weight: var(--fontWeightLight);
+  font-size: 1.4rem;
+}
+
+strong {
+  color: var(--colorP);
+  font-weight: var(--fontWeightRegular);
+  font-size: 1.6rem;
+}
+
 section {
   margin: 200px 0;
 }
@@ -103,7 +115,7 @@ section {
 
 .container {
   /* width: 100%; */
-  width: 1024px;
+  width: 1280px;
   margin: 0 auto;
 }
 
@@ -113,6 +125,9 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .sectionBanner .columnLeft h1 {
@@ -174,7 +189,8 @@ section {
   flex-wrap: wrap;
   column-gap: 40px;
   row-gap: 70px;
-  margin-top: 100px;
+  width: 1024px;
+  margin: 100px auto 0 auto;
 }
 
 .imageLight,
@@ -188,4 +204,73 @@ html[data-theme="light"] .imageLight {
 
 html[data-theme="dark"] .imageDark {
   display: inline-block !important;
+}
+
+/* PROJECTS SECTION */
+
+.sectionProjects header {
+  text-align: center;
+}
+
+.sectionProjects header h2 {
+  margin-bottom: 10px;
+}
+
+.sectionProjects header h3 {
+  margin-top: 0;
+}
+
+.sectionProjects .projectsContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  column-gap: 40px;
+  row-gap: 60px;
+  margin-top: 100px;
+}
+
+.projectCard {
+  width: 375px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: rgba(000, 000, 000, 0.2) 0px 8px 24px;
+  background-color: var(--backgroundProjectCard);
+}
+
+.projectCardContent {
+  padding: 20px;
+}
+
+.projectCardContent h4 {
+  margin: 0;
+  line-height: 2.6rem;
+}
+
+.projectActions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.projectActions .linkWithIcon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.projectActions .linkWithIcon a {
+  color: var(--colorLink);
+  text-decoration: underline;
+  font-size: 1.6rem;
+}
+
+.projectActions .linkWithIcon:first-child svg path {
+  stroke: var(--colorLink);
+}
+
+.projectActions .linkWithIcon:last-child svg path {
+  fill: var(--colorLink);
 }

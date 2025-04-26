@@ -13,6 +13,7 @@ VARIABLES
   --green01: #018c0f;
   --green02: #d7ffe0;
   --white: #fff;
+  --black: #000;
   --primaryGradient: linear-gradient(90deg, #13b0f5 3%, #e70faa 100%);
   --fontWeightLight: 300;
   --fontWeightRegular: 400;
@@ -22,6 +23,8 @@ VARIABLES
 }
 
 html[data-theme="light"] {
+  --colorLink: var(--black);
+  --backgroundProjectCard: var(--white);
   --background: var(--white);
   --colorH1: var(--blue01);
   --colorH2: var(--blue01);
@@ -34,6 +37,7 @@ html[data-theme="light"] {
 
 html[data-theme="dark"] {
   --background: var(--grey01);
+  --backgroundProjectCard: var(--grey02);
   --colorH1: var(--grey05);
   --colorH2: var(--grey05);
   --colorH3: var(--grey04);
@@ -41,4 +45,5 @@ html[data-theme="dark"] {
   --colorP: var(--grey05);
   --colorPrimaryMenu: var(--grey04);
   --colorText: var(--white);
+  --colorLink: var(--white);
 }
