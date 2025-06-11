@@ -274,3 +274,69 @@ html[data-theme="dark"] .imageDark {
 .projectActions .linkWithIcon:last-child svg path {
   fill: var(--colorLink);
 }
+
+/* FOOTER SECTION */
+
+/* .footerWrapper {
+  font-family: "DM Sans", sans-serif;
+} */
+
+.footerWrapper .mainFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--grey03);
+  height: 100px;
+}
+
+/* MAIN FOOTER */
+
+.footerWrapper .mainFooter .mainFooterCol {
+  display: flex;
+  align-items: center;
+}
+
+.footerWrapper .mainFooter .mainFooterCol.left {
+  justify-content: flex-start;
+}
+
+.footerWrapper .mainFooter .mainFooterCol.right {
+  justify-content: flex-end;
+}
+
+.mainFooterCol.right ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+}
+
+.mainFooterCol.right a {
+  color: var(--colorPrimaryMenu);
+  font-weight: var(--fontWeightLight);
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+
+/* MINI FOOTER */
+
+.miniFooter {
+  padding: 60px 0;
+}
+
+.miniFooter nav ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  gap: 30px;
+}
+
+.miniFooter nav ul li a {
+  color: var(--colorPrimaryMenu);
+  font-size: 2rem;
+  text-decoration: none;
+}
