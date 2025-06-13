@@ -33,6 +33,7 @@ html[data-theme="light"] {
   --colorP: var(--grey03);
   --colorPrimaryMenu: var(--grey03);
   --colorText: var(--blue01);
+  --colorBorder: #ebeaed;
 }
 
 html[data-theme="dark"] {
@@ -46,4 +47,5 @@ html[data-theme="dark"] {
   --colorPrimaryMenu: var(--grey04);
   --colorText: var(--white);
   --colorLink: var(--white);
+  --colorBorder: #454545;
 }
