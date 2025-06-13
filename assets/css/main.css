@@ -187,9 +187,8 @@ section {
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
-  column-gap: 40px;
+  column-gap: 100px;
   row-gap: 70px;
-  width: 1024px;
   margin: 100px auto 0 auto;
 }
 
@@ -343,6 +342,8 @@ html[data-theme="dark"] .imageDark {
 
 /* PAGES */
 
+/* ABOUT PAGE */
+
 .about-page section {
   width: 100%;
   max-width: 700px;
@@ -363,15 +364,16 @@ html[data-theme="dark"] .imageDark {
   margin-bottom: 0;
 }
 
+.about-page section.sectionEducation {
+  margin-bottom: 60px;
+}
+
 .about-page section.sectionEducation h2 {
   font-size: 4.2rem;
   font-weight: var(--fontWeightBold);
+  margin-top: 25px;
+  margin-bottom: 0;
 }
-
-/* expList
-expListItem
-expFirstLine
-expSecondLine */
 
 .about-page .expList {
   color: var(--colorP);
@@ -417,4 +419,51 @@ expSecondLine */
   display: flex;
   align-items: center;
   gap: 5px;
+}
+
+/* STACK PAGE */
+
+.stack-page .sectionTechStack {
+  margin-top: 150px;
+}
+
+.stack-page .sectionTechStack header {
+  text-align: left;
+}
+
+.stack-page .sectionTechStack .stackImagesContainer {
+  margin-top: 200px;
+}
+
+/* PROJECTS PAGE */
+
+.projects-page .sectionProjects {
+  margin-top: 150px;
+}
+
+.projects-page .sectionProjects header {
+  text-align: left;
+}
+
+.projects-page .sectionProjects .projectsContainer {
+  justify-content: space-between;
+}
+
+/* PROJECTS PAGE */
+
+.contact-page .sectionContact {
+  text-align: center;
+  margin: 200px 0 300px 0;
+}
+
+.contact-page .sectionContact h1 {
+  margin-bottom: 0;
+}
+
+.contact-page .sectionContact .content-email {
+  background: var(--primaryGradient);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 5.8rem;
+  font-weight: var(--fontWeightBold);
 }
